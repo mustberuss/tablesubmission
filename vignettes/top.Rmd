@@ -1,0 +1,25 @@
+---
+title: "Patentsview Data - 2022 Table Contest Entry"
+author: "Russ Allen and Chris Baker"
+date: '`r Sys.Date()`'
+output:
+  knitr:::html_vignette:
+    number_sections: yes
+    toc: yes
+vignette: |
+  %\VignetteIndexEntry{An Introduction to the DT Package}
+  %\VignetteEngine{knitr::rmarkdown_notangle}
+---
+
+<style type="text/css">
+table, table th, table td {
+  border: none;
+}
+</style>
+
+
+```{r, screenshot.force=FALSE}
+library(DT)
+data(top_asgns, package="tablesubmission")
+datatable(top_asgns)
+```
